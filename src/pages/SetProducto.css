@@ -1,0 +1,12 @@
+.SetProducto__page {
+	width: 100%;
+	margin: 0px;
+	padding: 60px 10px 20px;
+}
+
+.SetProducto__container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px;
+	padding: 0px;
+}
