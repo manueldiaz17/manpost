@@ -6,7 +6,7 @@ Abrir consola > ubicar carpeta del proyecto local
 
 Ejecutar en consola:
 
-git clone https://github.com/juanvelasco100/manpost.git
+git clone https://github.com/manueldiaz17/manpost.git
 cd manpost
 npm install
 git config core.autocrlf false
