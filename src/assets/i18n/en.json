@@ -1,0 +1,12 @@
+{
+    "locale" : "es-col",
+    "buttons" : {
+        "login" : "Log in",
+        "create_account" : "Create Account"
+    },
+    "labels" : {
+        "user" : "User",
+        "pass" : "Password"
+    }
+
+}

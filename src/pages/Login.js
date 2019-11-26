@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { AuthConsumer } from "../context/AuthContext";
+import React, { useState,useEffect} from "react";
+import {TranslatorProvider} from 'react-translate'
 
-
+import ButtonLogin from '../components/Login/ButtonLogin'
+import LoginLabel from '../components/Login/LoginLabel'
 const Login = (props) => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  
   const [user, setUser] = useState({
     ID: "1",
     LOGIN: "example",
@@ -13,15 +12,16 @@ const Login = (props) => {
     ROLE: "admin",
     LANG: "en"
   });
-  const { t, i18n } = useTranslation();
-  console.log(username, password);
 
-  i18n.changeLanguage(user.LANG);
- const handleSubmit = e => {
+
+  const hadaleonsubtmit = (e) => {
     e.preventDefault();
-    this.props.history.push(`/Home`);
-}
+    props.history.push('/Home')
+  }
+ 
   return (
+    <TranslatorProvider translations={require('.././assets/i18n/'+user.LANG+'.json')}>
+
     <div className="row justify-content-center">
       <div className="col-md-5">
         <div className="card mt-5">
@@ -32,39 +32,44 @@ const Login = (props) => {
             </h2>
             <form>
               <div className="form-group">
-                <label>{t('user.1')}</label>
+             <LoginLabel
+              content = "user"
+             />
                 <input
                   type="text"
                   className="form-control"
                   name="username"
-                  value={username}
-                  onChange={({ target }) => setUsername(target.value)}
+                  //value={username}
+                  //onChange={({ target }) => setUsername(target.value)}
                   required
-                />
+                  />
               </div>
 
               <div className="form-group">
-                <label> {t('pass.1')}</label>
+              <LoginLabel
+              content = "pass"
+             />
                 <input
                   type="password"
                   className="form-control"
                   name="password"
-                  value={password}
-                  onChange={({ target }) => setPassword(target.value)}
-                  required
+                  //value={password}
+                //  onChange={({ target }) => setPassword(target.value)}
+                required
                 />
               </div>
-              <input
-                type="submit"
-                className="btn btn-success btn-block"
-                onClick={handleSubmit}
-                value="Inicar Sesión"
+              <ButtonLogin
+                onClick={hadaleonsubtmit}
+                content="login"
+                
               />
+             
             </form>
           </div>
         </div>
       </div>
     </div>
+                </TranslatorProvider>
   );
 };
 

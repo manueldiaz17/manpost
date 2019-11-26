@@ -1,0 +1,12 @@
+{
+    "locale"     : "en-col",
+    "buttons"     : {
+        "login" : "Iniciar Sesión",
+        "create_account" : "Registrate"
+    },
+    "labels" : {
+        "user" : "Usuario",
+        "pass" : "Contraseña"
+    }
+ 
+}
