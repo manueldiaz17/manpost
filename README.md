@@ -1,3 +1,22 @@
+## Inicio Proyecto
+
+Clonar proyecto en carpeta local: opcional nombrar carpeta local "manpost"
+
+Abrir consola > ubicar carpeta del proyecto local
+
+Ejecutar en consola:
+
+git clone https://github.com/manueldiaz17/manpost.git
+cd manpost
+npm install
+git config core.autocrlf false
+
+## Librerias 
+se esta trabajando con los hooks 
+  ## i18next
+  
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
