@@ -11,11 +11,12 @@ class AuthProvaider extends Component {
         LOGIN: 'example',
         EMAIL: '@example.com',
         ROLE: 'admin',
-        LANG: 'es'
+        LANG: 'en'
     },
   };
 
-
+ 
+  
   render() {
     return (
       <AuthContext.Provider
