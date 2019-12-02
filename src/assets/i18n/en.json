@@ -2,11 +2,19 @@
     "locale" : "es-col",
     "buttons" : {
         "login" : "Log in",
-        "create_account" : "Create Account"
+        "create_account" : "Create Account",
+        "Agregar" :"Add"
     },
     "labels" : {
         "user" : "User",
-        "pass" : "Password"
+        "pass" : "Password",
+        "nombre" : "name",
+        "categoria" : "category",
+        "cantidad" : "quantity",
+        "valor" : "value"
+    },
+    "titulos" : {
+        "Agregar Productos" : "Add Products"
     }
 
 }
